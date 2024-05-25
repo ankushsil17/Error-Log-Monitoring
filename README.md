@@ -51,29 +51,29 @@ Example
 
 1. Sample Input (input.txt):
     
-     1 1715744138011;INTERNAL_SERVER_ERROR;23.72
-     1 1715744138012;INTERNAL_SERVER_ERROR;10.17
-     2 INTERNAL_SERVER_ERROR
-     1 1715744138012;BAD_REQUEST;15.22
-     1 1715744138013;INTERNAL_SERVER_ERROR;23.72
-     3 BEFORE 1715744138011
-     3 AFTER 1715744138010
-     2 BAD_REQUEST
-     4 BEFORE INTERNAL_SERVER_ERROR 1715744138011
+     1 1715744138011;INTERNAL_SERVER_ERROR;23.72 <br/>
+     1 1715744138012;INTERNAL_SERVER_ERROR;10.17 <br/>
+     2 INTERNAL_SERVER_ERROR <br/>
+     1 1715744138012;BAD_REQUEST;15.22 <br/>
+     1 1715744138013;INTERNAL_SERVER_ERROR;23.72 <br/>
+     3 BEFORE 1715744138011 <br/>
+     3 AFTER 1715744138010 <br/>
+     2 BAD_REQUEST <br/>
+     4 BEFORE INTERNAL_SERVER_ERROR 1715744138011 <br/>
      4 AFTER INTERNAL_SERVER_ERROR 1715744138010
     
 
 2. Sample Output (output.txt):
    
-    No output
-    No output
-    Min: 10.17, Max: 23.72, Mean: 16.945000
-    No output
-    No output
-    Min: 0.00, Max: 0.00, Mean: 0.000000
-    Min: 10.17, Max: 23.72, Mean: 18.207500
-    Min: 15.22, Max: 15.22, Mean: 15.220000
-    Min: 0.00, Max: 0.00, Mean: 0.000000
+    No output <br/>
+    No output <br/>
+    Min: 10.17, Max: 23.72, Mean: 16.945000 <br/>
+    No output <br/>
+    No output <br/>
+    Min: 0.00, Max: 0.00, Mean: 0.000000 <br/>
+    Min: 10.17, Max: 23.72, Mean: 18.207500 <br/>
+    Min: 15.22, Max: 15.22, Mean: 15.220000 <br/>
+    Min: 0.00, Max: 0.00, Mean: 0.000000 <br/>
     Min: 10.17, Max: 23.72, Mean: 19.203333
    
 
