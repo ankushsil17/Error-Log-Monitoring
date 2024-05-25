@@ -44,9 +44,6 @@ Dockerizing the Solution
     docker build -t errorlogmonitoring .
     
 2. Run the Docker Container:
-    docker run --name errorlogmonitoring -v $(pwd)/input.txt:/app/input.txt -v $(pwd)/output.txt:/app/output.txt errorlogmonitoring
-
-    For Windows, use:
     docker run --name errorlogmonitoring -v C:/path/to/your/project/input.txt:/app/input.txt -v C:/path/to/your/project/output.txt:/app/output.txt errorlogmonitoring
    
 
@@ -54,16 +51,16 @@ Example
 
 1. Sample Input (input.txt):
     
-    1 1715744138011;INTERNAL_SERVER_ERROR;23.72
-    1 1715744138012;INTERNAL_SERVER_ERROR;10.17
-    2 INTERNAL_SERVER_ERROR
-    1 1715744138012;BAD_REQUEST;15.22
-    1 1715744138013;INTERNAL_SERVER_ERROR;23.72
-    3 BEFORE 1715744138011
-    3 AFTER 1715744138010
-    2 BAD_REQUEST
-    4 BEFORE INTERNAL_SERVER_ERROR 1715744138011
-    4 AFTER INTERNAL_SERVER_ERROR 1715744138010
+     1 1715744138011;INTERNAL_SERVER_ERROR;23.72
+     1 1715744138012;INTERNAL_SERVER_ERROR;10.17
+     2 INTERNAL_SERVER_ERROR
+     1 1715744138012;BAD_REQUEST;15.22
+     1 1715744138013;INTERNAL_SERVER_ERROR;23.72
+     3 BEFORE 1715744138011
+     3 AFTER 1715744138010
+     2 BAD_REQUEST
+     4 BEFORE INTERNAL_SERVER_ERROR 1715744138011
+     4 AFTER INTERNAL_SERVER_ERROR 1715744138010
     
 
 2. Sample Output (output.txt):
